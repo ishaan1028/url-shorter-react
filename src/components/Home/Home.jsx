@@ -203,7 +203,7 @@ export default function Home() {
                                     Dashboard
                                 </p>
                                 <p className="welcomeText">
-                                    User: <span className="uiBold">{user?.email}</span>
+                                    Welcome <span className="uiBold">{user?.email}</span>
                                 </p>
                             </div>
                             <div className="homeTopStats">
