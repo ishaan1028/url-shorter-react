@@ -1,0 +1,141 @@
+.homeWrapper {
+  padding: 1rem 10rem;
+}
+
+.homeTop {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.homeTopDashBoard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.homeTopDashBoard p {
+  margin: 0;
+}
+
+.dashboardText {
+  font-size: 2rem;
+}
+
+.welcomeText {
+  font-size: 1.5rem;
+}
+
+.homeTopStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.statsDiv {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: hsl(210deg 8% 45%);
+}
+
+.uiBold {
+  font-weight: 600;
+  color: black;
+}
+
+.totalUrlText {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.tableCenter {
+  text-align: center;
+}
+
+.tableCenter p {
+  margin: 0;
+}
+
+.urlStyle {
+  color: #0d6efd;
+}
+
+.urlStyle:hover {
+  color: #6610f2;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  font-size: 1.2rem;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
+  color: crimson;
+}
+
+.paraMaxWidth {
+  max-width: 440px;
+}
+
+.actionsTd {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.shareIcon {
+  position: relative;
+  top: -1.5px;
+}
+.shareIcon:hover {
+  cursor: pointer;
+  color: #0d6efd;
+}
+
+.toast {
+  position: absolute;
+  right: 20px;
+  top: 250px;
+  width: 250px;
+}
+
+.homeBottom {
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 992px) {
+  .homeWrapper {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .homeTopDashBoard {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .homeMainCon {
+    max-width: 100%;
+  }
+
+  .homeTopStats {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .statsDiv {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
