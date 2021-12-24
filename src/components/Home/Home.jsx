@@ -125,14 +125,16 @@ export default function Home() {
 
     useEffect(() => {
 
-        setIsLoading(true);
+
         const getUrls = async () => {
             try {
-
+                setIsLoading(true);
                 const { data } = await axios.get(`/urls/user`, {
                     headers: { token }
                 });
                 setUrls(data);
+                setIsLoading(false);
+
             }
             catch (err) {
                 setIsLoading(false);
@@ -145,10 +147,12 @@ export default function Home() {
 
         const getUser = async () => {
             try {
+                setIsLoading(true);
                 const { data } = await axios.get(`/urls/profile`, {
                     headers: { token }
                 });
                 setUser(data);
+                setIsLoading(false);
             }
             catch (err) {
                 setIsLoading(false);
@@ -158,8 +162,6 @@ export default function Home() {
         }
 
         getUser();
-
-        setIsLoading(false);
 
 
     }, [token]);
