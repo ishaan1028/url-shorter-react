@@ -278,7 +278,7 @@ export default function Home() {
                                                     </span>
                                                     <span className="shareIcon"
                                                         onClick={() => {
-                                                            navigator.clipboard.writeText("localhost:3000/" + u.shortUrl);
+                                                            navigator.clipboard.writeText("ushrt.netlify.app/" + u.shortUrl);
                                                             setShowToast(true);
                                                         }
                                                         }>
