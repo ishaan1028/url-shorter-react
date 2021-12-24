@@ -85,7 +85,7 @@ export default function Home() {
     const validationSchema = Yup.object({
         fullUrl: Yup.string()
             .required('Required')
-            .matches(/^((http|https):\/\/)?(www.)?(?!.*(http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+(\/)?.([\w\?[a-zA-Z-_%\/@?]+)*([^\/\w\?[a-zA-Z0-9_-]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/, 'Enter a valid url')
+            .matches(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig, 'Enter a valid url')
     });
 
     const onSubmit = ({ fullUrl }) => {
